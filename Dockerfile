@@ -1,4 +1,5 @@
 FROM openjdk:8
-COPY ./src/java
+COPY . /scr/java
 WORKDIR /scr/java
-RUN javac Simple.java
+RUN javac Main.java
+ENTRYPOINT java Main
